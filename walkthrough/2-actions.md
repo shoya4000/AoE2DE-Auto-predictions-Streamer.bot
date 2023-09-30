@@ -1,6 +1,6 @@
 # Actions
 
-Now that we're set up to trigger from the SpectatorDashboard bots responses, let's set up what we're going to do with it
+Now that we're set up to trigger from the SpectatorDashboard bots responses, let's set up what we're going to do with it.
 For the Streamer.bot wiki steps on setting up actions, see [here](https://wiki.streamer.bot/en/Actions "Actions")
 
 1. Select the Actions tab
