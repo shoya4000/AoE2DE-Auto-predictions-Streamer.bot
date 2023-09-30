@@ -10,4 +10,4 @@ To do so with this project:
 It will open into the correct location, just find and select System.dll, and then System.Text.RegularExpressions.dll
 <img title="C# Compiler settings" src="/images/C sharp Compiler settings.png">
 
-And you should be good to go!
+And you should be good to go! Test it by having anyone type "#match" in the Twitch chat when you're live and playing or casting a game!

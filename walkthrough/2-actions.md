@@ -30,3 +30,5 @@ Right-click in the Sub-Actions window and select Core -> C# -> Execute C# Code, 
 
 Completed Action should look like this:
 <img title="Auto-prediction Action Complete" src="../images/Auto-prediction Action Complete.png">
+
+And that should be it! Go forth and test it by having anyone type "#match" in the Twitch chat when you're live and playing or casting a game!
