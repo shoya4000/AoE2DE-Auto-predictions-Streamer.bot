@@ -25,7 +25,7 @@ Right-click in the Sub-Actions window and select Core -> C# -> Execute C# Code, 
 <img title="Add C# Code" src="../images/Add C sharp Code.png">
 <img title="Parsing code" src="../images/Parsing code.png">
 
-This now gives us global temp variables to work with, including numPlayers, then player1Civ, player1Elo, player1Name, and player2Civp, player2Elo, and player2Name, etc. for each player
+This now gives us global temp variables to work with, including: numPlayers, then player1Civ, player1Elo, player1Name, and player2Civ, player2Elo, player2Name, etc. for each player
 
 6. With the response parsed, we now want to use the info to create the predication.
 I've put together some code to do that [auto-prediction.cs]("../src/"auto-prediction.cs)
