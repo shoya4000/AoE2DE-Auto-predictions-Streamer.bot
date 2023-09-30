@@ -6,7 +6,7 @@
 4. We use a couple specific C# libraries for the code parts and will need to have them available for the code to compile and run.
 Select the settings tab -> C# Compiler, and then right-click and select Add reference from file...
 It will open into the correct location, just find and select System.dll, and then System.Text.RegularExpressions.dll
-<img title="C# Compiler settings" src="../images/C# Compiler settings.png">
+<img title="C# Compiler settings" src="../images/C sharp Compiler settings.png">
 
 ## Optional
-There will be some additional options for automating some interactions with [CaptureAge](https://captureage.com/ "CaptureAge"), install that as well if you like.
+There will be some additional options for automating some interactions with [CaptureAge](https://captureage.com/ "CaptureAge"), install that as well if you like

@@ -1,6 +1,6 @@
 # Command to trigger
 
-When your stream URL is tracked by Spectator Dashboard, your chat has access to the #match command, which the [SpectatorDashboard] (https://www.twitch.tv/spectatordashboard "SpectatorDashboard") bot responds to with info about your current match, either played or spectated.
+When your stream URL is tracked by Spectator Dashboard, your chat has access to the #match command, which the [SpectatorDashboard] (https://www.twitch.tv/spectatordashboard "SpectatorDashboard") bot responds to with info about your current match, either played or spectated
 
 We want to capture the response from the bot. To do so, we're going to define a command which can only be called by a message sent to your Twitch chat by the bot.
 For the Streamer.bot wiki steps on setting up commands, see [here](https://wiki.streamer.bot/en/Commands "Commands")
