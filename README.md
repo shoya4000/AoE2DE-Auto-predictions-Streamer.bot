@@ -14,8 +14,8 @@ See [walkthrough](/walkthrough) for a complete step-by-step breakdown of how it 
 ## Planned additions
 
 Will continue to add to this: 
-1. Steps for using the variable data with CaptureAge
-2. Getting each player colour/player number from the match info
+1. Getting each player colour/player number from the match info
+2. Steps for using the variable data with CaptureAge
 3. Open to further suggestions, feedback, and fixing any issues you may find
 
 ## License
