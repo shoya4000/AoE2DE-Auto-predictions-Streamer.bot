@@ -1,5 +1,5 @@
 # AoE2DE-Auto-predictions-Streamer.bot
-Setup, walkthrough. and code to use Streamer.bot to automatically generate channel predictions using responses from SpectatorDashboard
+Setup, walkthrough. and code to use [Streamer.bot](https://streamer.bot/) to automatically generate channel predictions using responses from [SpectatorDashboard](https://aoe2recs.com/)
 
 [Grathwrang](https://www.twitch.tv/grathwrang "Grathwrang") had the idea and was working to get this setup, and I hopped in to offer programming knowledge and assistance
 
@@ -23,7 +23,7 @@ See [walkthrough](/walkthrough) for a complete step-by-step breakdown of how it 
 
 Will continue to add to this: 
 1. Getting each player colour/player number from the match info
-2. Steps for using the variable data with CaptureAge
+2. Steps for using the variable data with [CaptureAge](https://captureage.com/)
 3. Please send further suggestions, feedback, and issues found to be fixed
 
 ## License
