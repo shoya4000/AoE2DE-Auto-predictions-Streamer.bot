@@ -7,7 +7,7 @@ This is the result of that, a tool for the AoE2DE community to use as you please
 
 ## Input and Output
 
-On a stream tracked by Spectator Dashboard, when a viewer types #match, a response appears in the chat from the [SpectatorDashboard bot] (https://www.twitch.tv/spectatordashboard "SpectatorDashboard") with info about the currently streaming match, either played or spectated.
+On a stream tracked by Spectator Dashboard, when a viewer types #match, a response appears in the chat from the [SpectatorDashboard] (https://www.twitch.tv/spectatordashboard "SpectatorDashboard") bot with info about the currently streaming match, either played or spectated.
 
 This project does two things with that response:
 1. The response is parsed into variables that can be used elsewhere: number of players, and the player names, elos, and civs
