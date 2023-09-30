@@ -1,7 +1,7 @@
 # AoE2DE-Auto-predictions-Streamer.bot
 Setup, walkthrough. and code to use Streamer.bot to automatically generate channel predictions using responses from SpectatorDashboard
 
-[Grathwrang](https://www.twitch.tv/grathwrang "Grathwrang") had the idea and was working to get this setup, and I hopped in to offer programming skills and assistance
+[Grathwrang](https://www.twitch.tv/grathwrang "Grathwrang") had the idea and was working to get this setup, and I hopped in to offer programming knowledge and assistance
 
 This is the result of that, a tool for the AoE2DE community to use as you please!
 
