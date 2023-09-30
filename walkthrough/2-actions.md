@@ -20,10 +20,13 @@ Right-click in the Sub-Actions window and select Core -> Globals -> Global (Set)
 5. Now that we've got the raw input from the response, we need to parse it out for the bits we need.
 I've put together some code to do this [response-parsing.cs]("../src/"response-parsing.cs)
 Right-click in the Sub-Actions window and select Core -> C# -> Execute C# Code, and replace the code you find there with [response-parsing.cs]("../src/"response-parsing.cs)
+<img title="Add C# Code" src="../images/Add C# Code.png">
+<img title="Parsing code" src="../images/Parsing code.png">
 
 6. With the response parsed, we now want to use the info to create the predication.
 I've put together some code to do that [auto-prediction.cs]("../src/"auto-prediction.cs)
 Right-click in the Sub-Actions window and select Core -> C# -> Execute C# Code, and replace the code you find there with [auto-prediction.cs]("../src/"auto-prediction.cs)
+<img title="Auto-prediction code" src="../images/Auto-prediction code.png">
 
 Completed Action should look like this:
 <img title="Auto-prediction Action Complete" src="../images/Auto-prediction Action Complete.png">
