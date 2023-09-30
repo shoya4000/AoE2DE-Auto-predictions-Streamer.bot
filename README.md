@@ -5,6 +5,13 @@ Setup, walkthrough. and code to use Streamer.bot to automatically generate chann
 
 This is the result of that, a tool for the AoE2DE community to use as you please!
 
+## Input and Output
+
+On a stream tracked by Spectator Dashboard, when a player types #match, a response appears in the chat is given from the SpectatorDashboard bot.
+This project does two things:
+1. The response is parsed into variables that can be used elsewhere: number of players, and the player names, elos, and civs
+2. The variables are used to start a Twitch auto-prediction. Works for any game with the same number of players on each team: 1v1, 1v1v1, 2v2, 3v3 etc. 
+
 ## Use
 
 If you just want to import the actions and commands and get it working, see [quickuse](/quickuse.md)
