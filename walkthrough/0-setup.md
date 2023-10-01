@@ -8,4 +8,4 @@ Select the settings tab -> C# Compiler, and then right-click and select Add refe
 It will open into the correct location, just find and select ```System.dll```, and then ```System.Text.RegularExpressions.dll```
 <img title="C# Compiler settings" src="../images/C sharp Compiler settings.png">
 
-[Next - Create a Command to Trigger](/1-command-trigger.md)
+[Next - Create a Command to Trigger](./1-command-trigger.md)

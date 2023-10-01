@@ -17,4 +17,4 @@ For further information on how the regex works, see [here](https://regexr.com/7k
 Completed command should look like this:
 <img title="SpectatorDashboard command" src="../images/SpectatorDashboard command.png">
 
-[Next - Get and Parse Responses](./2-get-and-parse-responses.md)
+[Next - Get and Parse Responses](/2-get-and-parse-responses.md)
