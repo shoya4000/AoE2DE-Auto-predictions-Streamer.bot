@@ -15,9 +15,9 @@ This project does two things with that response:
 
 ## How to use it
 
-If you just want to import the actions and commands and get it working, see [Quickstart](/Quickstart.md)
+If you just want to import the actions and commands and get it working, see [Quickstart](./Quickstart.md)
 
-See [walkthrough](/walkthrough) for a complete step-by-step breakdown of how it all works, and if you need to make any customizations for your setup
+See [walkthrough](./walkthrough) for a complete step-by-step breakdown of how it all works, and if you need to make any customizations for your setup
 
 ## License
 

@@ -36,4 +36,4 @@ This now gives us global temp variables to work with:
 
 You're now able to access use those variables however you need!
 
-[Next - Automatically Create Twitch Predictions](/3-create-prediction.md)
+[Next - Automatically Create Twitch Predictions](./3-create-prediction.md)
