@@ -1,4 +1,4 @@
-# Quickuse
+# Quickstart
 
 Streamer.bot can quickly and easily [import and export](https://wiki.streamer.bot/en/Actions/Importing-and-Exporting) commands and actions.
 

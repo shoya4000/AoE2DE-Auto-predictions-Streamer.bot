@@ -8,5 +8,4 @@ Select the settings tab -> C# Compiler, and then right-click and select Add refe
 It will open into the correct location, just find and select ```System.dll```, and then ```System.Text.RegularExpressions.dll```
 <img title="C# Compiler settings" src="../images/C sharp Compiler settings.png">
 
-## Optional
-There will be some additional options for automating some interactions with [CaptureAge](https://captureage.com/ "CaptureAge"), install that as well if you like
+[Next - Create a Command to Trigger](/1-command-trigger.md)

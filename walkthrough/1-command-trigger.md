@@ -1,4 +1,4 @@
-# Command to trigger
+# Create a Command to Trigger
 
 When your stream URL is tracked by Spectator Dashboard, your chat has access to the #match command, which the [SpectatorDashboard bot](https://www.twitch.tv/spectatordashboard "SpectatorDashboard") responds to with info about your current match, either played or spectated
 
@@ -16,3 +16,5 @@ For further information on how the regex works, see [here](https://regexr.com/7k
 
 Completed command should look like this:
 <img title="SpectatorDashboard command" src="../images/SpectatorDashboard command.png">
+
+[Next - Get and Parse Responses](/2-get-and-parse-responses.md)

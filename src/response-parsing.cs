@@ -6,23 +6,21 @@ public class CPHInline {
     // The temp variable that contains the match information
     var matchInfo = CPH.GetGlobalVar < string > ("matchInfo", false);
 
-    // The regular expression pattern to match players' names, ranked elos, and civs
-    // This works with standard special characters, European language characters,
-    // Vietnamese, Chinese, Japanese, Russian, Korean, and Greek, + some unique special characters used by top 1000 players
-    Regex rx = new Regex(@"([a-zA-ZÀ-ȕẠ-Ỿ0-9!-\/:-@[-`{-~！• \u4E00-\u9FBF\u3040-\u309F\u30A0-\u30FF\u0400-\u04FF\uAC00-\uD7A3\u3000-\u303F\u0370-\u03FF]* \(([0-9]{1,4})+\) as \w+)");
+    // Regular expression to match players' names, ranked elos, civs, and colours/numbers
+    Regex rx = new Regex(@"([🔵|🔴|🟢|🟡|Ⓜ️|🟣|⚪|🟠].+? \([0-9]{1,4}\) as \w+)");
 
-    // The MatchCollection list that contains the results
-    MatchCollection matches = rx.Matches(matchInfo);
-  
-  // Store the number of players in the match in a temp variable
-    CPH.SetGlobalVar("numPlayers", matches.Count, false);
-    
+    // The MatchCollection list that contains the collection of players info
+    MatchCollection allPlayerInfo = rx.Matches(matchInfo);
+
+    // Store the number of players in the match in a temp variable
+    CPH.SetGlobalVar("numPlayers", allPlayerInfo.Count, false);
+
     // If the MatchCollection all players' info, assign the values to temp variables
-    if (matches.Count > 1) {
-      for (int i = 1; i <= matches.Count; i++) {
+    if (allPlayerInfo.Count > 1) {
+      for (int i = 1; i <= allPlayerInfo.Count; i++) {
         // Parse each of the players' info: remove the "as", and split based on spaces around 2 brackets with 1-4 digits inside
-        var playerInfo = Regex.Split(matches[i - 1].Value.Replace("as ", ""), @" \(([0-9]{1,4})+\) ");
-        
+        var playerInfo = Regex.Split(allPlayerInfo[i - 1].Value.Replace("as ", ""), @" \(([0-9]{1,4})+\) ");
+
         // If a player name is longer than the 25 character limit (https://dev.twitch.tv/docs/api/reference/#create-prediction), truncate        
         if (playerInfo[0].Length > 25) {
           playerInfo[0] = playerInfo[0].Substring(0, 25);
@@ -32,8 +30,31 @@ public class CPHInline {
         CPH.SetGlobalVar(String.Format("player{0}Name", i), playerInfo[0], false);
         CPH.SetGlobalVar(String.Format("player{0}Elo", i), int.Parse(playerInfo[1]), false);
         CPH.SetGlobalVar(String.Format("player{0}Civ", i), playerInfo[2], false);
+        CPH.SetGlobalVar(String.Format("player{0}Colour", i), getColourNumber(playerInfo[0].Substring(0, 2)).Item1, false);
+        CPH.SetGlobalVar(String.Format("player{0}Number", i), getColourNumber(playerInfo[0].Substring(0, 2)).Item2, false);
       }
     }
     return true;
+  }
+  public Tuple < string, int > getColourNumber(string colour) {
+    if (colour == "🔵") {
+      return Tuple.Create("blue", 1);
+    } else if (colour.Contains("🔴")) {
+      return Tuple.Create("red", 2);
+    } else if (colour.Contains("🟢")) {
+      return Tuple.Create("green", 3);
+    } else if (colour.Contains("🟡")) {
+      return Tuple.Create("yellow", 4);
+    } else if (colour.Contains("Ⓜ️")) {
+      return Tuple.Create("cyan", 5);
+    } else if (colour.Contains("🟣")) {
+      return Tuple.Create("magenta", 6);
+    } else if (colour.Contains("⚪")) {
+      return Tuple.Create("grey", 7);
+    } else if (colour.Contains("🟠")) {
+      return Tuple.Create("orange", 8);
+    } else {
+      return Tuple.Create("?", 0);
+    }
   }
 }
