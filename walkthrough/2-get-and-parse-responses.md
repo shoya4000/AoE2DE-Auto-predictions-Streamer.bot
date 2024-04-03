@@ -20,8 +20,8 @@ Right-click in the Sub-Actions window and select Core -> Globals -> Global (Set)
 We can now access the match information by referring to the "matchInfo" variable in our code
 
 5. Now that we've got the raw input from the response, let's parse it out into more variables we can use
-I've put together some code to do this [response-parsing.cs]("../src/"response-parsing.cs)\
-Right-click in the Sub-Actions window and select Core -> C# -> Execute C# Code, and replace the code you find there with [response-parsing.cs]("../src/"response-parsing.cs)
+I've put together some code to do this [response-parsing.cs]("../src/response-parsing.cs")\
+Right-click in the Sub-Actions window and select Core -> C# -> Execute C# Code, and replace the code you find there with [response-parsing.cs]("../src/response-parsing.cs")
 <img title="Add C# Code" src="../images/Add C sharp Code.png">
 <img title="Parsing code" src="../images/Parsing code.png">
 
