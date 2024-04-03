@@ -5,8 +5,8 @@ For the Streamer.bot wiki steps on setting up Predictions, see [here](https://wi
 For Twitch's information on Predictions, see [here](https://dev.twitch.tv/docs/api/predictions/#creating-a-prediction "Predictions")
 
 1. With the variable we previously stored, we can now create the prediction.
-I've put together some code to do that [auto-prediction.cs]("../src/"auto-prediction.cs)\
-Right-click in the Sub-Actions window and select Core -> C# -> Execute C# Code, and replace the code you find there with [auto-prediction.cs]("../src/"auto-prediction.cs)
+I've put together some code to do that [auto-prediction.cs](../src/auto-prediction.cs)\
+Right-click in the Sub-Actions window and select Core -> C# -> Execute C# Code, and replace the code you find there with [auto-prediction.cs](../src/auto-prediction.cs)
 <img title="Auto-prediction code" src="../images/Auto-prediction code.png">
 
 The completed Action should look like this:
