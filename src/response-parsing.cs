@@ -19,7 +19,7 @@ public class CPHInline {
     if (allPlayerInfo.Count > 1) {
       for (int i = 1; i <= allPlayerInfo.Count; i++) {
         // Parse each of the players' info: remove the "as", and split based on spaces around 2 brackets with 1-4 digits inside
-        var playerInfo = Regex.Split(allPlayerInfo[i - 1].Value.Replace("as ", ""), @" \(([0-9]{1,4})+\) ");
+        var playerInfo = Regex.Split(allPlayerInfo[i - 1].Value.Replace(") as ", ") "), @" \(([0-9]{1,4})+\) ");
 
         // If a player name is longer than the 25 character limit (https://dev.twitch.tv/docs/api/reference/#create-prediction), truncate        
         if (playerInfo[0].Length > 25) {
