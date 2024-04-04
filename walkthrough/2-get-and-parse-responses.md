@@ -34,6 +34,6 @@ This now gives us global temp variables to work with:
 - player1Number
 - ^and same again for each other player
 
-You're now able to access use those variables however you need!
+You're now able to use those variables however you need!
 
 [Next - Automatically Create Twitch Predictions](./3-create-prediction.md)
